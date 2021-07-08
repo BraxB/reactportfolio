@@ -28,13 +28,13 @@ h3 {
   margin-left: 2%;
 }
 
-/* set body text to white and background to dark blue */
+/* set body text to white and background to black */
 body {
   color: white;
   background: black;
   background: url(backdrop.jpg) top right no-repeat;
   background-attachment: fixed;
-  background-size: fill;
+  background-size:fill;
   background-position: top;
 }
 
@@ -47,7 +47,6 @@ main {
 #landing {
   padding: 1%;
   margin-bottom: 0%;
-  max-height: 60rem;
   display: flex;
   flex-wrap: wrap-reverse;
 }
@@ -62,31 +61,28 @@ main {
   align-self: flex-end;
   bottom: 0;
   background-color: rgba(85, 85, 85, 0.4);
+  color:white;
   flex-wrap: wrap;
   border-radius: 15px;
+}
+
+.container p {
+  font-size: 1.25rem;
 }
 
 .container h2 {
   line-height: 4rem;
 }
 
-#brax {
-  display: flex;
-  justify-content: flex-end;
-  max-height: 40rem;
-}
-
 #landing figure {
   display: flex;
   justify-content: flex-end;
-  bottom: 0;
 }
 
 /* set blending mode for my picture and max width/height */
 #landing .col-lg-6 img {
   mix-blend-mode: screen;
   max-width: 100%;
-  max-height: 38rem;
   display: flex;
   flex-wrap: wrap-reverse;
 }
@@ -121,31 +117,6 @@ main {
 #mostRecent {
   max-height: 30rem;
   margin-top: 0%;
-}
-
-/* styling and positioning the footer elements */
-/* the following block prevents margin issues experienced with the footer not spanning the full page */
-footer {
-  overflow-x: hidden;
-}
-
-/* this centers the very last line of the page as well as the contact header */
-footer .col-12 {
-  display: flex;
-  justify-content: center;
-  margin-top: 1%;
-}
-
-footer a {
-  font-family: "Bungee", cursive;
-  font-weight: 200;
-  color: rgb(132, 117, 200);
-}
-
-/* spaces the contact links */
-footer .col-4 {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 /* set background and landing area to resize for better mobile experience */
