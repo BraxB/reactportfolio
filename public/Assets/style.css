@@ -1,0 +1,161 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bungee", cursive;
+}
+
+.navbar {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.navbar-brand {
+  padding-left: 2%;
+  font-size: 2em;
+  line-height: 80%;
+}
+
+.dropdown {
+  margin-left: 2%;
+}
+
+/* set body text to white and background to dark blue */
+body {
+  color: white;
+  background: black;
+  background: url(backdrop.jpg) top right no-repeat;
+  background-attachment: fixed;
+  background-size: fill;
+  background-position: top;
+}
+
+/* set a margin across entire body */
+main {
+  margin: 2%;
+}
+
+/* positioning the landing section and items */
+#landing {
+  padding: 1%;
+  margin-bottom: 0%;
+  max-height: 60rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+#landing .col-lg-6 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.container {
+  display: flex;
+  align-self: flex-end;
+  bottom: 0;
+  background-color: rgba(85, 85, 85, 0.4);
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+
+.container h2 {
+  line-height: 4rem;
+}
+
+#brax {
+  display: flex;
+  justify-content: flex-end;
+  max-height: 40rem;
+}
+
+#landing figure {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+}
+
+/* set blending mode for my picture and max width/height */
+#landing .col-lg-6 img {
+  mix-blend-mode: screen;
+  max-width: 100%;
+  max-height: 38rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+/* the following blocks control the cards and layout of the work section */
+/* set a top margin and height for cards and any overflow on cards to be hidden */
+.card {
+  object-fit: contain;
+  overflow: hidden;
+  margin-top: 2%;
+  max-height: 20rem;
+}
+
+/* set dimensions for card image to fit parent */
+.card img {
+  max-height: 30rem;
+  max-width: 100%;
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+/* created a hover state for each card */
+.card:hover a img {
+  opacity: 0.75;
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* set the most recent project to be slightly larger than other cards */
+#mostRecent {
+  max-height: 30rem;
+  margin-top: 0%;
+}
+
+/* styling and positioning the footer elements */
+/* the following block prevents margin issues experienced with the footer not spanning the full page */
+footer {
+  overflow-x: hidden;
+}
+
+/* this centers the very last line of the page as well as the contact header */
+footer .col-12 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+footer a {
+  font-family: "Bungee", cursive;
+  font-weight: 200;
+  color: rgb(132, 117, 200);
+}
+
+/* spaces the contact links */
+footer .col-4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* set background and landing area to resize for better mobile experience */
+@media only screen and (max-width: 800px) {
+  body {
+    background-size: 175%;
+    background-color: black;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+}
