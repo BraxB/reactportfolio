@@ -1,13 +1,22 @@
 import React from 'react';
 
-export default function Work() {
+export default function Navbar() {
     return (
-        <div className="row" id="landing">
-            <div className="col-lg-6 gx-4">
-                <div className="container" id="about">
-                    <h2>About</h2>
-                </div>
-            </div>
+        <nav className= "navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="dropdown show">
+            <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+          
+            <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                <li><a className="dropdown-item" href="/">About</a></li>
+                <li><a className="dropdown-item" href="work">Work</a></li>
+                <li><a className="dropdown-item" href="contact">Contact</a></li>  
+            </ul>
         </div>
+        <div className="navbar-brand">
+            <h1>Braxton Bodenhamer</h1>
+        </div>
+    </nav>
     )
 }

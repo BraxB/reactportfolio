@@ -5,11 +5,12 @@ import Contact from './components/pages/Contact';
 import Work from './components/pages/Work';
 import Err from './components/pages/Err';
 import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 function App() {
   return (
       <Router>
+        <Navbar />
             <Switch>
               <Route exact path="/">
                 <About />
@@ -22,6 +23,7 @@ function App() {
               </Route>
               <Route component={Err} />
             </Switch>
+        <Footer />
       </Router>
   );
 }
