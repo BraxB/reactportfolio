@@ -11,15 +11,15 @@ function App() {
       <Router>
         <Navbar />
             <Switch>
-              <Route exact path="/">
+              <Router exact path="/">
                 <About />
-              </Route>
-              <Route exact path="/work">
+              </Router>
+              <Router exact path="/work">
                 <Work />
-              </Route>
-              <Route exact path="/contact">
+              </Router>
+              <Router exact path="/contact">
                 <Contact />
-              </Route>
+              </Router>
             </Switch>
         <Footer />
       </Router>
