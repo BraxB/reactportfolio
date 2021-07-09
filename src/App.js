@@ -12,8 +12,8 @@ function App() {
         <Navbar />
             <Switch>
               <Route exact path="/reactportfolio" component={About} />
-              <Route exact path="/work" component={Work} />
-              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/reactportfolio/work" component={Work} />
+              <Route exact path="/reactportfolio/contact" component={Contact} />
             </Switch>
         <Footer />
       </Router>
