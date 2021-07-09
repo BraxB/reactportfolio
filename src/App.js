@@ -11,15 +11,9 @@ function App() {
       <Router>
         <Navbar />
             <Switch>
-              <Route exact path="/">
-                <About />
-              </Route>
-              <Route exact path="/work">
-                <Work />
-              </Route>
-              <Route exact path="/contact">
-                <Contact />
-              </Route>
+              <Route exact path="/reactportfolio" component={About} />
+              <Route exact path="/work" component={Work} />
+              <Route exact path="/contact" component={Contact} />
             </Switch>
         <Footer />
       </Router>
