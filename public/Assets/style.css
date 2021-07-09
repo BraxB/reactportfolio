@@ -2,6 +2,7 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+  background-color: black;
 }
 
 h1,
@@ -29,10 +30,8 @@ h3 {
 /* set body text to white and background to black */
 body {
   color: white;
-  background: black;
   background: url(backdrop.jpg) top right no-repeat;
-  background-attachment: fixed;
-  background-size:fill;
+  background-attachment: scroll;
   background-position: top;
 }
 
@@ -62,6 +61,11 @@ main {
   color:white;
   flex-wrap: wrap;
   border-radius: 15px;
+}
+
+.container-fluid {
+  margin-top: 1%;
+  margin-bottom: 4.5%;
 }
 
 .container p {
@@ -117,6 +121,13 @@ main {
   margin-top: 0%;
 }
 
+.contactForm {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
 .footer{
   margin-top: 1rem;
   padding: 1rem;
@@ -128,7 +139,7 @@ main {
 }
 
 /* set background and landing area to resize for better mobile experience */
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   body {
     background-size: 175%;
     background-color: black;
@@ -137,4 +148,4 @@ main {
   h1 {
     font-size: 1.25rem;
   }
-}
+} */

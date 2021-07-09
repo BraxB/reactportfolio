@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Work() {
+export default function About() {
     return (
         <div className="row" id="landing">
             <div className="col-lg-6 gx-4">
