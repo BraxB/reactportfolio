@@ -2,7 +2,7 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  background-color: black;
+  background-color: black; 
 }
 
 h1,
@@ -27,17 +27,12 @@ h3 {
   margin-left: 2%;
 }
 
-/* set body text to white and background to black */
+/* set body text to white and background image */
 body {
   color: white;
   background: url(backdrop.jpg) top right no-repeat;
-  background-attachment: scroll;
+  background-size: cover;
   background-position: top;
-}
-
-/* set a margin across entire body */
-main {
-  margin: 2%;
 }
 
 /* positioning the landing section and items */
@@ -126,7 +121,9 @@ main {
   flex-wrap: wrap;
 }
 
-
+.contactForm h2 {
+  color: white;
+}
 
 .footer{
   margin-top: 1rem;

@@ -38,7 +38,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="col-xs-12">
+        <div className="formContainer col-xs-12 col-lg-3">
             <form className="contactForm">
                 <h2>Contact</h2>
                 <input
