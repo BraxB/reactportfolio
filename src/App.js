@@ -21,7 +21,6 @@ function App() {
               <Route exact path="/contact">
                 <Contact />
               </Route>
-              <Route component={Err} />
             </Switch>
         <Footer />
       </Router>
