@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Work from './components/pages/Work';
@@ -11,9 +11,9 @@ function App() {
       <Router>
         <Navbar />
             <Switch>
-              <Route exact path="/reactportfolio" component={About} />
-              <Route exact path="/reactportfolio/work" component={Work} />
-              <Route exact path="/reactportfolio/contact" component={Contact} />
+              <Route exact path="/" component={About} />
+              <Route exact path="/work" component={Work} />
+              <Route exact path="/contact" component={Contact} />
             </Switch>
         <Footer />
       </Router>

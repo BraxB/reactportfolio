@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -9,9 +10,18 @@ export default function Navbar() {
             </a>
           
             <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-                <li><a className="dropdown-item" href="/">About</a></li>
-                <li><a className="dropdown-item" href="work">Work</a></li>
-                <li><a className="dropdown-item" href="contact">Contact</a></li>  
+                <li><NavLink 
+                    exact
+                    to="/"
+                    className="dropdown-item">About</NavLink></li>
+                <li><NavLink 
+                    exact
+                    to="/work"
+                    className="dropdown-item">Work</NavLink></li>
+                <li><NavLink 
+                    exact
+                    to="/contact"
+                    className="dropdown-item">Contact</NavLink></li>
             </ul>
         </div>
         <div className="navbar-brand">

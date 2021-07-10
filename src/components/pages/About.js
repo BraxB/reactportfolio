@@ -1,4 +1,6 @@
 import React from 'react';
+import Brax from '../../Assets/brax.png'
+import '../../Assets/style.css'
 
 export default function About() {
     return (
@@ -13,7 +15,7 @@ export default function About() {
             </div>
             <div className="col-lg-6" id="brax">
                 <figure>
-                    <img src="Assets/brax.png"></img>
+                    <img src={Brax}></img>
                 </figure>
             </div>
         </div>
