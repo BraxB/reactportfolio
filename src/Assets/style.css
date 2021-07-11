@@ -11,10 +11,15 @@ h3 {
   font-family: "Bungee", cursive;
 }
 
-.navbar {
+#navbar {
+  top: 0;
   display: flex;
-  align-content: flex-start;
-  justify-content: flex-start;
+  position: fixed;
+  padding: 1rem;
+  left: 0;
+  width: 100%;
+  margin-bottom: 2rem;
+  z-index: 9;
 }
 
 .navbar-brand {
@@ -27,20 +32,27 @@ h3 {
   margin-left: 2%;
 }
 
+#root {
+  background-color: black;
+}
+
 /* set body text to white and background image */
 body {
   color: white;
-  background: url(backdrop.jpg) top right no-repeat;
-  background-size: cover;
-  background-position: top;
+  background-color: black;
 }
 
 /* positioning the landing section and items */
 #landing {
   padding: 1%;
+  margin-top: 5%;
   margin-bottom: 0%;
   display: flex;
   flex-wrap: wrap-reverse;
+  background: url(backdrop.jpg);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #landing .col-lg-6 {
@@ -59,7 +71,8 @@ body {
 }
 
 .container-fluid {
-  margin-top: 1%;
+  margin-top: 5.5%;
+  z-index: 1;
   margin-bottom: 4.5%;
 }
 
@@ -97,10 +110,6 @@ body {
 .card img {
   max-height: 30rem;
   max-width: 100%;
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
 }
 
 /* created a hover state for each card */

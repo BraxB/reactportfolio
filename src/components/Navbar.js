@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import "../Assets/style.css";
 
 export default function Navbar() {
     return (
-        <nav className= "navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className= "navbar navbar-expand-lg navbar-dark bg-dark help" id="navbar">
         <div className="dropdown show">
-            <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button className="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Menu
-            </a>
+            </button>
           
             <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
                 <li><NavLink 
