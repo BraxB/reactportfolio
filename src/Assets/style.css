@@ -74,7 +74,7 @@ body {
 
 /* set blending mode for my picture and max width/height */
 #landing .col-lg-6 img {
-  max-width: 85%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
 }
@@ -139,6 +139,9 @@ body {
   margin-top: 5.5%;
   margin-left: 1.5%;
   margin-right: 1.5%;
+}
+
+.skills_resume {
   min-height: 85vh;
 }
 
@@ -161,8 +164,9 @@ body {
 /* CONTACT SECTION */
 
 .formContainer {
-  margin-top: 5.5%;
+  margin-top: 8%;
   margin-left: 1.5%;
+  margin-right: 1.5%;
   min-height: 85vh;
 }
 
@@ -185,7 +189,6 @@ body {
 /* FOOTER SECTION */
 
 .footer{
-  margin-top: 1rem;
   padding: 1rem;
   position: fixed;
   bottom: 0;
@@ -205,14 +208,102 @@ body {
   opacity: 40%;
 }
 
-/* set background and landing area to resize for better mobile experience */
-@media only screen and (max-width: 800px) {
-  body {
-    background-size: 175%;
-    background-color: black;
+@media only screen and (max-width: 1199px) {
+  .formContainer {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 1632px) {
+  #landing {
+    margin: 10% 1%;
   }
 
-  h1 {
-    font-size: 1.25rem;
+  figure img {
+    flex-grow:2;
+  }
+
+  .container-fluid {
+    margin: 8% 1% 8% 1%;
+  }
+
+  .skillscontainer {
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #root {
+    background-attachment: fixed;
+  }
+
+  #landing {
+    margin: 10% 1%;
+  }
+
+  #brax {
+    min-width: 100%;
+  }
+
+  figure img {
+    max-height: 100%;
+  }
+
+  .container-fluid {
+    margin: 15% 1% 15% 1%;
+  }
+
+  .skillscontainer {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 716px) {
+
+  .navbar-brand h1 {
+    font-size: .97rem;
+  }
+
+  #landing{
+    margin: 28% 1%;
+  }
+
+  #landing .col-lg-6 img {
+    margin-top: 3%;
+  }
+
+  .container p {
+    font-size: 18px;
+  }
+
+  .container-fluid {
+    margin: 15% 1% 15% 1%;
+  }
+}
+
+@media only screen and (max-width: 564px) {
+  .container-fluid {
+    margin: 20% 1% 25% 1%;
+  }
+  .formContainer{
+    margin-top: 15%;
+  }
+  .skillscontainer {
+    margin-top: 19%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container-fluid {
+    margin-top: 31%;
+  }
+
+  .formContainer{
+    margin-top: 31%;
+  }
+
+  .skillscontainer {
+    margin-top: 31%;
+    padding: 4%;
   }
 }

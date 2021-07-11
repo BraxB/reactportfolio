@@ -38,7 +38,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="formContainer col-s-12 col-lg-3">
+        <div className="formContainer col-med-12 col-xl-3">
             <div className="borderbox">
                 <form className="contactForm">
                     <h2>Contact</h2>
