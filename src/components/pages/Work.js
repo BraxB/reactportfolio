@@ -11,7 +11,7 @@ export default function Work() {
         <div className="container-fluid">
             <div className="col-12">
                 <div className="card bg-dark text-white" id="mostRecent">
-                    <a className="stretched-link" href="https://cohoots.herokuapp.com/" target="_blank">
+                    <a className="stretched-link" href="https://cohoots.herokuapp.com/" target="_blank" rel="noreferrer">
                         <img src={Shirts} className="card-img" alt="t-shirts folded"></img>
                     </a>
                     <div className="card-img-overlay">
@@ -24,7 +24,7 @@ export default function Work() {
                 <div className="col-lg-6">
                     <div className="card bg-dark text-white">
                         <a className="stretched-link" href="https://github.com/BraxB/Good_README" target="_blank" rel="noreferrer">
-                            <img className="card-img" src={Goodreadme} alt="good readme generator link with placeholder image of water"></img>
+                            <img className="card-img" src={Goodreadme} alt="ocean water link to GoodReadme generator"></img>
                         </a>
                         <div className="card-img-overlay">
                             <h3 className="card-title">Good README Generator</h3>

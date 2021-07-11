@@ -15,7 +15,7 @@ export default function About() {
             </div>
             <div className="col-lg-6" id="brax">
                 <figure>
-                    <img src={Brax}></img>
+                    <img src={Brax} alt="Brax Bodenhamer in sunglasses and tracksuit"></img>
                 </figure>
             </div>
         </div>

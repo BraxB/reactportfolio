@@ -63,7 +63,7 @@ export default function Contact() {
                     type="text"
                     placeholder="Contact form does not currently work. Please use email in the meantime!"
                 />
-                <button onClick={handleFormSubmit}>Submit</button>
+                <button className="btn btn-dark" onClick={handleFormSubmit}>Submit</button>
             </form>
             {errorMessage && (
                 <div>
