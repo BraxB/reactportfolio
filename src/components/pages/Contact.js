@@ -38,37 +38,39 @@ export default function Contact() {
     };
 
     return (
-        <div className="formContainer col-xs-12 col-lg-3">
-            <form className="contactForm">
-                <h2>Contact</h2>
-                <input
-                    value={usersName}
-                    name="name"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="Full Name"
-                />
-                <input 
-                    value={email}
-                    name="email"
-                    onChange={handleInputChange}
-                    type="email"
-                    placeholder="Email"
-                />
-                <textarea
-                    value={message}
-                    name="message"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="Contact form does not currently work. Please use email in the meantime!"
-                />
-                <button className="btn btn-dark" onClick={handleFormSubmit}>Submit</button>
-            </form>
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-            )}
+        <div className="formContainer col-s-12 col-lg-3">
+            <div className="borderbox">
+                <form className="contactForm">
+                    <h2>Contact</h2>
+                    <input
+                        value={usersName}
+                        name="name"
+                        onChange={handleInputChange}
+                        type="text"
+                        placeholder="Full Name"
+                    />
+                    <input 
+                        value={email}
+                        name="email"
+                        onChange={handleInputChange}
+                        type="email"
+                        placeholder="Email"
+                    />
+                    <textarea
+                        value={message}
+                        name="message"
+                        onChange={handleInputChange}
+                        type="text"
+                        placeholder="Contact form does not currently work. Please use email in the meantime!"
+                    />
+                    <button className="btn btn-secondary" onClick={handleFormSubmit}>Submit</button>
+                </form>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
     return (
-        <nav className= "navbar navbar-expand-lg navbar-dark bg-dark help" id="navbar">
+        <nav className= "navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
         <div className="dropdown show">
             <button className="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Menu
@@ -18,6 +18,10 @@ export default function Navbar() {
                     exact
                     to="/work"
                     className="dropdown-item">Work</NavLink></li>
+                <li><NavLink 
+                    exact
+                    to="/resume"
+                    className="dropdown-item">Skills & Resume</NavLink></li>
                 <li><NavLink 
                     exact
                     to="/contact"
