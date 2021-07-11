@@ -1,5 +1,4 @@
 import React from 'react';
-import "../Assets/style.css"
 import Github from "../Assets/GitHub_logo.png";
 import Email from "../Assets/email.png";
 import Stackoverflow from "../Assets/stackoverflow.png";

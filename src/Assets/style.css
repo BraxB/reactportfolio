@@ -54,6 +54,7 @@ body {
   margin-top: 5%;
   margin-bottom: 0%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap-reverse;
   background: url(backdrop.jpg);
   background-size:contain;
@@ -96,6 +97,10 @@ body {
   margin-top: 5.5%;
   z-index: 1;
   margin-bottom: 5%;
+  background: url(backdrop.jpg);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container p {
@@ -168,6 +173,10 @@ body {
 .footer img {
   height: 3rem;
   margin-right: 1.5em;
+}
+
+.footer img:hover {
+  opacity: 40%;
 }
 
 /* set background and landing area to resize for better mobile experience */

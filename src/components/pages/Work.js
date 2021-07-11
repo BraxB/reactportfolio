@@ -1,5 +1,4 @@
 import React from 'react';
-import "../../Assets/style.css";
 import Recipefinder from "../../Assets/drinks_and_food_on_bar.jpg";
 import Shirts from "../../Assets/cohoots_shirts.jpg";
 import Goodreadme from "../../Assets/surf.jpg";
